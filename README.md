@@ -1,4 +1,7 @@
 # Hybrid-to-Pressure Level Interpolation Using NCO
+**Sandro W. Lubis, Ph.D.**
+Pacific Northwest National Laboratory (PNNL)
+
 
 This script converts E3SM atmosphere model output from hybrid vertical coordinates to standard pressure levels using NCO `ncremap`. The workflow is designed for E3SM/CAM-style files that contain hybrid-coordinate variables such as `hyam`, `hybm`, `P0`, and surface pressure `PS`.
 
