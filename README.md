@@ -7,7 +7,7 @@ This script converts E3SM atmosphere model output from hybrid vertical coordinat
 
 ## Purpose
 
-E3SM atmospheric variables such as `U` and `V` are often stored on hybrid sigma-pressure levels:
+E3SM atmospheric variables such as `U`, `V` and other variables are often stored on hybrid sigma-pressure levels:
 
 \[
 p(k) = hyam(k) \times P0 + hybm(k) \times PS
@@ -15,5 +15,5 @@ p(k) = hyam(k) \times P0 + hybm(k) \times PS
 
 where `PS` is surface pressure and `P0` is the reference pressure. For many diagnostics and comparisons with reanalysis data, these variables need to be interpolated to fixed pressure levels such as 1000, 850, 500, and 200 hPa.
 
-This script uses NCO to interpolate `U` and `V` from hybrid levels to pressure levels for each year from 1980 to 2014.
+This script uses NCO to interpolate `U` and `V` (as an example) from hybrid levels to pressure levels for each year from 1980 to 2014.
 
